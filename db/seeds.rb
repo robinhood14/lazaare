@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-test = test.create([{name: 'test'}])
+
 
  Item.create(title: 'poire', description: 'fruity fruity', price: 10, img_url: "http://www.olivepressee.com/31-large_default/vinaigre-balsamique-poire.jpg")
  Item.create(title: 'pomme', description: 'fruity fruity', price: 11, img_url: "http://images.all-free-download.com/images/graphicthumb/red_and_green_apple_310425.jpg")
