@@ -1,3 +1,178 @@
+   <!-- Main Content Wrapper -->
+
+    <main class="content-wrapper">
+
+
+
+
+
+      <!-- Image -->
+
+      <div class="featured-image" style="background-image: url(https://augustman.com/content/uploads/archived/var/augustman/storage/images/sg/pop-culture/art-culture/four-art-shows-to-see-right-now/271995-1-eng-US/Four-Art-Shows-To-See-Right-Now-1140x400.png);">
+
+       </div>
+
+
+
+      <!-- Content -->
+
+      <section class="container padding-top-3x padding-bottom-3x">
+
+        <h1>User Account</h1>
+
+        
+
+        <div class="row padding-top">
+
+          <!-- login --> 
+
+          <div class="col-md-offset-2 col-md-4 padding-bottom">
+            <h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), class: "login-form") do |f| %>
+  <div class="field">
+    
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-control" %>
+  </div>
+
+  <div class="field">
+    
+    <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "form-control" %>
+  </div>
+  <div class="form-footer">
+               
+               
+              
+  <% if devise_mapping.rememberable? -%>
+
+    <div class="rememberme">
+      <label class="checkbox">
+                    <input type="checkbox" name="user[remember_me]" id="user_remember_me" checked> Remember me
+                  </label>
+      
+    </div>
+  <% end -%>
+
+  <div class="form-submit">
+    <button name="commit" value="Log in" data-disable-with="Log in" type="submit" class="btn btn-primary btn-block waves-effect waves-light">Login</button>
+  </div>
+<% end %>
+
+
+<%= render "devise/shared/links" %>
+</div>
+
+
+            <h3>Sign up</h3>
+
+
+
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name), class: "login-form") do |f| %>
+
+            <%= devise_error_messages! %>
+
+              <div class="field">
+
+                
+
+                <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-control" %>
+
+              </div>
+
+  
+
+              <div class="field"> 
+              <% if @minimum_password_length %>
+
+                  <em>(<%= @minimum_password_length %> characters minimum)</em>
+
+                <% end %>                 
+
+                <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "form-control" %>
+
+                 
+
+              </div>
+
+  
+
+              <div class="field">
+
+
+                <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password confirmation", class: "form-control" %>
+
+              </div>
+
+
+
+              <div class="form-submit">
+
+                
+                <button name="commit" value="Sign up" data-disable-with="Sign up" type="submit" class="btn btn-primary btn-block waves-effect waves-light">Signup</button>
+
+              </div>
+
+            <% end %>
+
+
+
+            <%= render "devise/shared/links" %>
+
+
+
+            
+
+          </div><!-- .col-md-4 -->
+
+          
+
+           <!-- Sign up --> 
+
+          <!-- .col-md-4 -->
+
+        
+
+        <!-- RESEAUX SOCIAUX --> 
+
+          <div class="col-md-4 padding-top-2x">
+
+            <a href="#" class="social-signup-btn ssb-facebook">
+
+              <i class="socicon-facebook"></i>
+
+              <span>Signup with Facebook</span>
+
+            </a>
+
+            <a href="#" class="social-signup-btn ssb-google">
+
+              <i class="socicon-googleplus"></i>
+
+              <span>Signup with Google+</span>
+
+            </a>
+
+            <a href="#" class="social-signup-btn ssb-twitter">
+
+              <i class="socicon-twitter"></i>
+
+              <span>Signup with Twitter</span>
+
+            </a>
+
+          </div><!-- .col-md-4 -->
+
+        </div><!-- .row -->
+
+      </section><!-- .container -->
+
+
+
+
+
+  </div><!-- .page-wrapper -->
+
+
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
