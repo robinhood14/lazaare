@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  get 'carts', to: 'carts#show'
+  get 'carts/:id(.:format)', to: 'carts#show'
 
 
   #get '/index' => 'items#index'

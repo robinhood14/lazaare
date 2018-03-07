@@ -3,6 +3,7 @@ class CartsController < ApplicationController
 	 before_action :authenticate_user!
 
 def show 
+  $cart = Cart.find_by user_id:(current_user.id)
   @CartUser = current_user.cart
   @total = 0
   @CartUser.items.each do |item|

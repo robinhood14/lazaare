@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
   def index
 
 		@items = Item.all
-		@cart = Cart.find_by user_id:(current_user.id)
+		$cart = Cart.find_by user_id:(current_user.id)
 
 
 
