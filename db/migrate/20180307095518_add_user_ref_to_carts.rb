@@ -1,5 +1,5 @@
 class AddUserRefToCarts < ActiveRecord::Migration[5.1]
   def change
-    add_reference :carts, :user, foreign_key: true
+    add_column :carts, :user_id, :integer
   end
 end
