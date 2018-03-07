@@ -16,8 +16,12 @@ class Cart < ApplicationRecord
 
 	# TAREK
 	# VOILA LE DEBUT DE LA METHODE QUI DEVRA ETRE APPELEE LORSQUE LE USER FERA : add to cart
+=begin
+		
 	def add_item
 		self.items << #item
 	end
+
+=end
 
 end

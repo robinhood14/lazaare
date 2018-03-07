@@ -10,19 +10,22 @@ class CartsController < ApplicationController
 
   end
 
+=begin
   def update
-  	if user_sign_in?
+
+
+    if user_sign_in?
   		if current_user.cart
-##add items
-  	else 
-  		Cart.create(user: current_user)
-  	end
-  	redirect_to cart_path(current_user.cart)
+        ##add items
+    	else 
+    		Cart.create(user: current_user)
+    	end
+  	 redirect_to cart_path(current_user.cart)
+
+    else 
+    	redirect_to new_user_session_path
+    end
   end
-else 
-	redirect_to new_user_session_path
-end
-end
 
   def delete
   	#find selected items
@@ -30,7 +33,7 @@ end
 
   end
 
-
+=end
 	 private
 
 	 def cart_params
