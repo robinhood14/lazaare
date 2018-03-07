@@ -12,4 +12,12 @@ class Cart < ApplicationRecord
 	belongs_to :user
 	has_many :selected_items
 	has_many :items, through: :selected_items
+
+
+	# TAREK
+	# VOILA LE DEBUT DE LA METHODE QUI DEVRA ETRE APPELEE LORSQUE LE USER FERA : add to cart
+	def add_item
+		self.items << #item
+	end
+
 end

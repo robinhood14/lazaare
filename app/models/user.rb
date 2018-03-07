@@ -23,6 +23,16 @@ class User < ApplicationRecord
   has_one :cart
   has_many :orders
 
+  # TAREK
+  # after_create DECLENCHER LA METHODE create_cart
+  # ATTENTION, il faudra un dependant destroy quelque part ;)
+
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable
+
+  # TAREK
+  #method qui crée un cart pour l'utilisateur
+  def create_cart
+  end
+
 end
