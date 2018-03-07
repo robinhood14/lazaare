@@ -44,7 +44,8 @@
                     </div>
                     <div class="col-sm-6">
                       <div class="form-element">
-                        <label for="current_password">Current password <i>(if you want to change password)</i></label><br/>
+                        <label for="current_password">Current password </label>
+                        <em>(if you want to change password)</em>
                         <%= f.password_field :current_password, autocomplete: "off", class: "form-control" %>
                         
                         
@@ -54,7 +55,7 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="form-element">
-                        <label for="password">Password <i>(leave blank if you don't want to change it)</i></label>
+                        <label for="password">Password</label>
                         <% if @minimum_password_length %>
             
                         <em><%= @minimum_password_length %> characters minimum</em>
