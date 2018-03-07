@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'carts', to: 'carts#show'
 
 
+  #get '/index' => 'items#index'
+
   #get '/user' => 'devise/registrations#edit'
 
   #get 'items/index'
