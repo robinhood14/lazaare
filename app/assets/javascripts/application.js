@@ -10,6 +10,17 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require page-preloading
+//= require modernizr.custom
+//= require jquery-2.1.4.min
+//= require bootstrap.min
+//= require smoothscroll
+//= require velocity.min
+//= require waves.min
+//= require icheck.min
+//= require owl.carousel.min
+//= require magnific-popup.min
+//= require scripts
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .

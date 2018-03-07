@@ -1,29 +1,199 @@
-<h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+    <!-- Main Content Wrapper -->
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+    <main class="content-wrapper">
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+      <!-- Image -->
+
+      <div class="featured-image" style="background-image: url(img/featured-image/faq.jpg);">
+
+       </div>
+
+
+
+      <!-- Content -->
+
+      <section class="container padding-top-3x padding-bottom-3x">
+
+        <h1>User Account</h1>
+
+        
+
+        <div class="row padding-top">
+
+          <!-- login --> 
+
+          <div class="col-md-4 padding-bottom">
+
+            <h3>Login</h3>
+
+
+
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+            <%= devise_error_messages! %>
+
+              <div class="field">
+
+                <%= f.label :email %><br />
+
+                <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+
+              </div>
+
+  
+
+              <div class="field">
+
+                <%= f.label :password %>
+
+                <% if @minimum_password_length %>
+
+                  <em>(<%= @minimum_password_length %> characters minimum)</em>
+
+                <% end %><br />
+
+                <%= f.password_field :password, autocomplete: "off" %>
+
+              </div>
+
+  
+
+              <div class="field">
+
+                <%= f.label :password_confirmation %><br />
+
+                <%= f.password_field :password_confirmation, autocomplete: "off" %>
+
+              </div>
+
+
+
+              <div class="actions">
+
+                <%= f.submit "Sign up" %>
+
+              </div>
+
+            <% end %>
+
+
+
+            <%= render "devise/shared/links" %>
+
+
+
+            <!--<form method="post" class="login-form">
+
+
+
+              <input type="text" class="form-control" placeholder="Username" required>
+
+              <input type="password" class="form-control" placeholder="Password" required>
+
+              <div class="form-footer">
+
+                <div class="rememberme">
+
+                  <label class="checkbox">
+
+                    <input type="checkbox" checked> Remember me
+
+                  </label>
+
+                </div>
+
+                <div class="form-submit">
+
+                  <button type="submit" class="btn btn-primary btn-block waves-effect waves-light">Login</button>
+
+                </div>
+
+              </div>
+
+            </form>--><!-- .login-form -->
+
+          </div><!-- .col-md-4 -->
+
+          
+
+           <!-- Sign up --> 
+
+          <div class="col-md-4">
+
+           
+
+            <h3>Sign up</h3>
+
+            <div class="inner">
+
+              <form method="post" class="login-form">
+
+                <input type="email" class="form-control" placeholder="E-mail" required>
+
+                <input type="password" class="form-control" placeholder="Password" required>
+
+                <input type="password" class="form-control" placeholder="Repeat password" required>
+
+                <div class="form-footer">
+
+                  <div class="rememberme"></div>
+
+                  <div class="form-submit">
+
+                    <button type="submit" class="btn btn-primary btn-block waves-effect waves-light">Sign up</button>
+
+                  </div>
+
+                </div>
+
+              </form><!-- .login-form -->
+
+            </div><!-- .inner -->
+
+          </div><!-- .col-md-4 -->
+
+        
+
+        <!-- RESEAUX SOCIAUX --> 
+
+          <div class="col-md-4 padding-top-2x">
+
+            <a href="#" class="social-signup-btn ssb-facebook">
+
+              <i class="socicon-facebook"></i>
+
+              <span>Signup with Facebook</span>
+
+            </a>
+
+            <a href="#" class="social-signup-btn ssb-google">
+
+              <i class="socicon-googleplus"></i>
+
+              <span>Signup with Google+</span>
+
+            </a>
+
+            <a href="#" class="social-signup-btn ssb-twitter">
+
+              <i class="socicon-twitter"></i>
+
+              <span>Signup with Twitter</span>
+
+            </a>
+
+          </div><!-- .col-md-4 -->
+
+        </div><!-- .row -->
+
+      </section><!-- .container -->
+
+
+
+
+
+  </div><!-- .page-wrapper -->

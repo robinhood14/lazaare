@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-
  Item.create(title: 'poire', description: 'fruity fruity', price: 10, img_url: "http://www.olivepressee.com/31-large_default/vinaigre-balsamique-poire.jpg")
  Item.create(title: 'pomme', description: 'fruity fruity', price: 11, img_url: "http://images.all-free-download.com/images/graphicthumb/red_and_green_apple_310425.jpg")
  Item.create(title: 'abricot', description: 'fruity fruity', price: 12, img_url: "https://www.aroma-zone.com/cms/sites/default/files/fiche_technique/fragrances_cosmetiques/Visuel_sorbet-abricot.png")
