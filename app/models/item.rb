@@ -12,8 +12,8 @@
 #
 
 class Item < ApplicationRecord
-
-	has_many :carts, through: :carts_items 
+	has_many :selected_items
+	has_many :carts, through: :selected_items
 	has_and_belongs_to_many :orders
 
 

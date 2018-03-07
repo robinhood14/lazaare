@@ -9,6 +9,7 @@
 #
 
 class Cart < ApplicationRecord
-	has_many :items, through: :carts_items
+	has_many :selected_items
+	has_many :items, through: :selected_items
 	belongs_to :user
 end
