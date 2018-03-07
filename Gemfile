@@ -28,6 +28,7 @@ group :development, :test do
   gem "factory_bot_rails"
   gem 'simplecov'
   gem 'annotate'
+  gem 'dotenv-rails'
   gem 'rails-erd', require: false
 end
 
