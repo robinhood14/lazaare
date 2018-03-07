@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'carts/delete'
 
+  #get '/user' => 'devise/registrations#edit'
+
   #get 'items/index'
 
   #get 'items/show'
