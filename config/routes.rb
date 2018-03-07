@@ -1,16 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'orders/create'
 
-  get 'orders/delete'
+  get 'carts/:id(.:format)', to: 'carts#show'
 
-  get 'orders/payment'
-
-  get 'carts/show'
-
-  get 'carts/update'
-
-  get 'carts/delete'
 
   #get '/index' => 'items#index'
 

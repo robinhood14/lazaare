@@ -12,4 +12,14 @@
  Item.create(title: 'abricot', description: 'fruity fruity', price: 12, img_url: "https://www.aroma-zone.com/cms/sites/default/files/fiche_technique/fragrances_cosmetiques/Visuel_sorbet-abricot.png")
  Item.create(title: 'pêche', description: 'fruity fruity', price: 13, img_url: "http://img-3.journaldesfemmes.com/IrV3p2mnAxSul6Oj1jjsk1Xofxk=/910x607/smart/23f0e9d66c2745c8b36b1a4c3c79d1a2/ccmcms-jdf/10662450.jpg")
  Item.create(title: 'banane', description: 'fruity fruity', price: 14, img_url: "http://mamul.am/images/photos/150322/banann-azatum-e-stre-n64757-1.jpg")
+
+ User.create(email: 'test@test.com', password: 'testtest', password_confirmation: 'testtest')
+ User.create(email: 'test1@test.com', password: 'test1test1', password_confirmation: 'test1test1')
+
+ Cart.create(user_id: 1, item_id: 5)
+ Cart.create(user_id: 2, item_id: 2)
+
+ SelectedItem.create(cart_id: 1, item_id: 2, count:1)
+ SelectedItem.create(cart_id: 2, item_id: 4, count:2)
+
  

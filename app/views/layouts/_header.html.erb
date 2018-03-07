@@ -26,7 +26,7 @@
         <div class="toolbar">
           <a href="/users/edit"><i class="material-icons person"></i></a>
           <div class="cart-btn">
-            <a href="shopping-cart.html">
+            <a href="<%= cart_path($cart)%>"
               <i>
                 <span class="material-icons shopping_basket"></span>
                 <span class="count">2</span>
@@ -54,7 +54,7 @@
                 <li><a href="shop-sidebar-right.html">Shop Sidebar Right</a></li>
                 <li><a href="shop-filters-top.html">Shop Filters Top</a></li>
                 <li><a href="shop-single.html">Single Product</a></li>
-                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="<%= cart_path($cart) %>">Shopping Cart</a></li>
                 <li><a href="checkout.html">Checkout</a></li>
                 <li><a href="login.html">Login / Register Page</a></li>
                 <li class="current-menu-item"><a href="account.html">User Account Page</a></li>
