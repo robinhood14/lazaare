@@ -89,7 +89,9 @@
 
                 <% else %>
 
-                  <li><a href="/users/edit">Login / Register Page</a></li>
+                  <li><a href="<%= new_user_session_path %>">Login</a></li>
+
+                  <li><a href="<%= new_user_registration_path %>">Sign up</a></li>
 
                 <%end%>
 
