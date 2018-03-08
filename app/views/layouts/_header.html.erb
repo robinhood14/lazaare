@@ -1,57 +1,238 @@
 <header class="navbar">
 
+
+
+
+
+
+
       <!-- Navbar Header -->
+
+
+
       <div class="navbar-header">
 
+
+
+
+
+
+
         <!-- Site Logo -->
-        <a href="#" class="site-logo visible-desktop">
-          <span>[</span> 
+
+
+
+        <a href="/index" class="site-logo visible-desktop">
+
+
+
+          <span></span>
+
+
+
           <span class="text-gray"></span>
-          LAZAARE <span>]</span>
+
+
+       <%= link_to  root_path() %> 
+
+        LAZAARE<span></span>
+
+
+
         </a><!-- site-logo.visible-desktop -->
-        <a href="#" class="site-logo visible-mobile">
-          <span>[</span> Lazaare <span>]</span>
+
+
+
+
+
+
+          <span></span> <span></span>
+
+
+
         </a><!-- site-logo.visible-mobile -->
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- Mobile Menu Toggle -->
+
+
+
         <a href="#" class="mobile-menu-toggle"><i class="material-icons menu"></i></a>
+
+
+
       </div><!-- .navbar-header -->
 
+
+
+
+
+
+
       <!-- Mobile Menu Wrapper -->
+
+
+
       <div class="mobile-menu-wrapper">
 
+
+
+
+
+
+
         <!-- Toolbar -->
+
+
+
         <div class="toolbar">
+
+
+
           <a href="/users/edit"><i class="material-icons person"></i></a>
+
+
+
           <div class="cart-btn">
+
+
+
             <a href="<%= cart_path($cart)%>"
+
+
+
               <i>
+
+
+
                 <span class="material-icons shopping_basket"></span>
-                <span class="count">2</span>
+
+<% if user_signed_in? %>
+
+                <span class="count"><%=$itemcount%></span>
+
+
+
+<%end%>
+
               </i>
+
+
+
             </a>
+
+
+
           </div><!-- .cart-btn -->
+
+
+
           <a href="#" class="subscribe-btn"><i class="material-icons mail_outline"></i></a>
+
+
+
         </div><!-- .toolbar -->
 
+
+
+
+
+
+
         <!-- Main Navigation -->
+
+
+
         <nav class="main-navigation">
+
+
+
           <ul class="menu">
-            <li class="menu-item-has-children">
+
+              <li class="menu-item-has-children">
+
+
+
               <%= link_to "Home", root_path() %>
+
+
+
             </li>
+
+
+
             <li class="menu-item-has-children current-menu-item">
+
+
+
               <a href="#">Shop</a>
+
+
+
               <ul class="sub-menu">
+
+                <% if user_signed_in? %>
+
                 <li><a href="<%= cart_path($cart) %>">Shopping Cart</a></li>
-                <li><a href="login.html">Login / Register Page</a></li>
-                <li class="current-menu-item"><a href=""/users/edit"">User Account Page</a></li>
+
+
+
+                <li><a href="">Checkout</a></li>
+
+                
+
+                <li class="current-menu-item"><a href="/user">User Account Page</a></li>
+
+                <li class="current-menu-item"><a href="<%= destroy_user_session_path %>" data-method="delete">Log out</a></li>
+
+                <% else %>
+
+                <li><a href="/users/edit">Login / Register Page</a></li>
+
+              <%end%>
+
+
+
               </ul>
+
+
+
             </li>
-            <li><a href="#">About</a></li>
+
+
+
+            <li class="menu-item-has-children current-menu-item"><a href="about.html">About</a></li>
+
+
+
+            <li><a href="#">Contacts</a></li>
+
+
+
           </ul><!-- .menu -->
+
+
+
         </nav><!-- .main-navigation -->
+
+
+
       </div><!-- .mobile-menu-wrapper -->
+
+
+
     </header><!-- .navbar -->
+
