@@ -16,11 +16,11 @@
  User.create(email: 'test@test.com', password: 'testtest', password_confirmation: 'testtest')
  User.create(email: 'test1@test.com', password: 'test1test1', password_confirmation: 'test1test1')
 
- Cart.create(user_id: 1, item_id: 5)
- Cart.create(user_id: 2, item_id: 2)
+ Cart.create(user_id: 1)
+ Cart.create(user_id: 2)
 
- SelectedItem.create(cart_id: 1, item_id: 2, counter:1)
- SelectedItem.create(cart_id: 1, item_id: 4, counter:3)
- SelectedItem.create(cart_id: 2, item_id: 4, counter:2)
+ SelectedItem.create(cart_id: 1, item_id: 2, quantity:1)
+ SelectedItem.create(cart_id: 1, item_id: 4, quantity:3)
+ SelectedItem.create(cart_id: 2, item_id: 4, quantity:2)
 
  

@@ -16,15 +16,12 @@ ActiveRecord::Schema.define(version: 20180308144135) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
-    t.integer "item_id"
-    t.index ["item_id"], name: "index_carts_on_item_id"
-    t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
   create_table "items", force: :cascade do |t|
     t.string "title"
     t.text "description"
-    t.decimal "price", precision: 8, scale: 2, default: "0.0"
+    t.float "price"
     t.string "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

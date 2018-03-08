@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'carts/:id(.:format)', to: 'carts#show'
 
+  get 'add/:id(.:format)', to: 'carts#update', as: :add_to_cart
+
 
   #get '/index' => 'items#index'
 

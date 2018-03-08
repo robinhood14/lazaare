@@ -18,14 +18,13 @@ class CartsController < ApplicationController
 
   def update
 
+    @item = (Item.find(params[:id])).id
     if user_signed_in?
       if $cart
-        $cart << Item.find(params[:id])
-        #@cartcontent << Item.find(params[:id])
-        redirect_to cart_path($cart)
+        $cart.add_item(@item)
       else
         $cart = Cart.create(user_id: current_user.id)
-        @cartcontent << Item.find(params[:id])
+        $cart.add_item(@item)
         redirect_to cart_path($cart)
       end
     else 
@@ -39,6 +38,10 @@ class CartsController < ApplicationController
 	 def cart_params
 	   params.require(:cart).permit(:user_id, :item_id)
 	 end
+
+    def items_params
+    params.require(:items).permit(:title, :description, :price, :img_url)
+  end
 
 end
 

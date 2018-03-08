@@ -19,6 +19,13 @@ class ItemsController < ApplicationController
 
   end
 
+  def add_to_cart
+  
+  	CartsController.update
+
+  end
+
+
 	private
 
 	def items_params
