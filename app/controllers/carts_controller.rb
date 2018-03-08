@@ -19,10 +19,14 @@ class CartsController < ApplicationController
   def update
 
     if user_signed_in?
-      if @CartUser
-        @CartUser.items << Item.find(params[:id])
-        
-        redirect_to cart_path(current_user.cart)
+      if $cart
+        $cart << Item.find(params[:id])
+        #@cartcontent << Item.find(params[:id])
+        redirect_to cart_path($cart)
+      else
+        $cart = Cart.create(user_id: current_user.id)
+        @cartcontent << Item.find(params[:id])
+        redirect_to cart_path($cart)
       end
     else 
       redirect_to new_user_session_path
@@ -39,7 +43,6 @@ class CartsController < ApplicationController
 end
 
 
-
 =begin original DB
   
 def show
@@ -50,7 +53,7 @@ def show
 
   end
 
-=begin
+
   def update
 
 
@@ -73,4 +76,13 @@ def show
 
   end
 
+    if @CartUser
+      @CartUser.items << Item.find(params[:id])
+    else 
+      @CartUser = Cart.create(user: current_user)
+#            Cart.create(user: current_user, item: Item.find(params[:id]))
+      #@CartUser = 0
+      @CartUser.items << Item.find(params[:id])
+    end
+      redirect_to cart_path(current_user.cart)
 =end
