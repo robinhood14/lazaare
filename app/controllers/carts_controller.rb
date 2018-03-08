@@ -6,9 +6,11 @@ class CartsController < ApplicationController
     $cart = Cart.find_by user_id:(current_user.id)
     @cartcontent = SelectedItem.where(cart_id: $cart.id)
     @subtotal = 0
+    @itemcount = 0
     @cartcontent.each do |item|
       @object = Item.find_by id: item.item_id
-      @subtotal += @object.price 
+      @subtotal += (@object.price * item.counter)
+      @itemcount += item.counter
     end
   end
  		
