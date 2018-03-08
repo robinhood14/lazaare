@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root 'items#index'
+
 
   get 'carts/:id(.:format)', to: 'carts#show'
 
@@ -25,7 +27,7 @@ post 'carts/:id(.:format)', to: "orders#payment", as: "paiement" #pour faire fon
 
 devise_for :users
 
-root 'items#index'
+
 
 resources :items
 resources :carts
