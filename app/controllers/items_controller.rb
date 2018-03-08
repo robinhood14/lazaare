@@ -3,11 +3,13 @@ class ItemsController < ApplicationController
   def index
 
 		@items = Item.all
-		$cart = Cart.find_by user_id:(current_user.id)
+		
+		if user_signed_in?
+    	$cart = Cart.find_by user_id:(current_user.id)
+    else
+    	$cart = 1
 
-
-
-
+    end
 
   end
 
