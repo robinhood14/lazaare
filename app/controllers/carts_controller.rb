@@ -33,6 +33,37 @@ class CartsController < ApplicationController
 
   end
 
+  def remove
+
+   @item = (Item.find(params[:id])).id
+   removable = SelectedItem.where(cart_id: $cart, item_id: @item).first
+   if removable.quantity <= 1
+
+      
+      redirect_to cart_path($cart)
+
+   else
+
+      
+      removable.update(quantity: removable.quantity.to_i - 1)
+      
+
+   end
+
+  end 
+
+  def delete
+    @item = (Item.find(params[:id])).id
+    deletable = SelectedItem.where(cart_id: $cart, item_id: @item).first
+
+    deletable.delete
+    redirect_to cart_path($cart)
+
+  end
+
+
+
+
 	 private
 
 	 def cart_params
@@ -40,8 +71,8 @@ class CartsController < ApplicationController
 	 end
 
     def items_params
-    params.require(:items).permit(:title, :description, :price, :img_url)
-  end
+      params.require(:items).permit(:title, :description, :price, :img_url)
+    end
 
 end
 

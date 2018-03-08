@@ -5,6 +5,10 @@ Rails.application.routes.draw do
 
   get 'add/:id(.:format)', to: 'carts#update', as: :add_to_cart
 
+  get 'remove/:id(.:format)', to: 'carts#remove', as: :rm_from_cart
+
+  delete 'delete/:id(.:format)', to: 'carts#delete', as: :dl_from_cart
+
 
   #get '/index' => 'items#index'
 
