@@ -4,7 +4,10 @@
 
 # Création d'un site e-commerce qui vend des montres et non des photos de chats ! ;) 
 
+*!!  SI PROBLEME HEROKU AU MOMENT DE SIGN UP, RETOURNEZ SUR LA ROOT HOME  !!
+
 Dans ce site, vous pouvez acheter de jolies petites montres fabriquée par impression 3D et dans une démarche d'éco conception. (mp robinhood si interessé : code promo THP)
+
 
 Parcours utilisateur : 
 
