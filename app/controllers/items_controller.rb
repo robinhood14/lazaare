@@ -5,8 +5,15 @@ class ItemsController < ApplicationController
 		@items = Item.all
 		
 		if user_signed_in?
-    	$cart = Cart.find_by user_id:(current_user.id)
+
+      unless Cart.find_by user_id:(current_user.id)
+        $cart = Cart.create(user_id: current_user.id)
+      else        
+    	 $cart = Cart.find_by user_id:(current_user.id)
+      end
+      
     else
+
     	$cart = 1
 
     end
