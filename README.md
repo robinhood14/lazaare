@@ -1,4 +1,6 @@
-<p align="center"> <img src="https://imgur.com/a/shAAV" target="_blank"> </p>
+<p align="center">
+<img src="https://i.imgur.com/yBqnJxY.png" title="source: imgur.com" /></a> 
+</p>
 
 # Céation d'un site e-commerce qui vend des montres et non des photos de chats ! ;) 
 
