@@ -16,6 +16,7 @@ gem 'bootstrap'
 gem 'bootstrap-sass'
 gem 'paperclip'
 gem 'activeadmin'
+gem 'stripe'
 #gem 'bcrypt', '3.1.11'
 
 group :development, :test do

@@ -18,13 +18,17 @@ Rails.application.routes.draw do
 
   #get 'items/show'
 
-  
-  devise_for :users
+get 'orders/payment'
 
-  root 'items#index'
+post 'carts/:id(.:format)', to: "orders#payment", as: "paiement" #pour faire fonctionner stripe
 
-	resources :items
-	resources :carts
+
+devise_for :users
+
+root 'items#index'
+
+resources :items
+resources :carts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   
   

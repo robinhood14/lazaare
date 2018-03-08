@@ -47,7 +47,59 @@
           <h4 class="amount"><%= @subtotal %></h4>
           <p class="text-sm text-gray">* Note: This amount does not include costs for international shipping. You will be able to calculate shipping costs on checkout.</p>
           <a href="#" class="btn btn-default btn-block waves-effect waves-light">Update Cart</a>
-          <a href="checkout.html" class="btn btn-primary btn-block waves-effect waves-light space-top-none">Checkout</a>
+          <!--bouton stripe paiement-->
+
+                <%= form_tag orders_payment_path do %>
+
+                <article>
+
+                  <% if flash[:error].present? %>
+
+                  <div id="error_explanation">
+
+                    <p><%= flash[:error] %></p>
+
+                  </div>
+
+                  <% end %>
+
+                  <label class="amount">
+
+                    <span>Amount: <%= @total %></span>
+
+                  </label>
+
+                </article>
+
+
+
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+
+                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+
+                data-description="A month's subscription"
+
+                data-amount="<%= @total %>"
+
+                data-locale="auto"
+
+                data-currency="eur">
+
+
+
+              </script>
+
+              <% end %>
+
+
+
+
+
+
+
+
+
+            </form>
         </aside>
       </div>
 
