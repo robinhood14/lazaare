@@ -2,28 +2,28 @@ class CartsController < ApplicationController
   
 	 before_action :authenticate_user!
 
-def show 
-  $cart = Cart.find_by user_id:(current_user.id)
-  @CartUser = current_user.cart
-  @total = 0
-  @CartUser.items.each do |item|
-    @total += item.price
+  def show 
+    $cart = Cart.find_by user_id:(current_user.id)
+    @cartcontent = SelectedItem.where(cart_id: $cart.id)
+    #@total = 0
+    #@cart.items.each do |item|
+    #  @total += item.price
+    #end
   end
-end
  		
-def update
+  def update
 
-  if user_signed_in?
-    if @CartUser
-      @CartUser.items << Item.find(params[:id])
-      
-      redirect_to cart_path(current_user.cart)
+    if user_signed_in?
+      if @CartUser
+        @CartUser.items << Item.find(params[:id])
+        
+        redirect_to cart_path(current_user.cart)
+      end
+    else 
+      redirect_to new_user_session_path
     end
-  else 
-    redirect_to new_user_session_path
-  end
 
-end
+  end
 
 	 private
 
