@@ -1,9 +1,9 @@
 class CartsController < ApplicationController
   
-	 #before_action :authenticate_user!
+	 before_action :authenticate_user!
 
   def show 
-    unless signed_in?
+    unless user_signed_in?
       redirect_to new_user_session_path
     end
     $cart = Cart.find_by user_id:(current_user.id)
@@ -11,7 +11,7 @@ class CartsController < ApplicationController
     @subtotal = 0
     $itemcount = 0
     @cartcontent.each do |item|
-      @object = Item.find_by id: item.item_id
+      @object = Item.find_by id:(item.item_id)
       @subtotal += (@object.price * item.quantity)
       $itemcount += item.quantity
     end
