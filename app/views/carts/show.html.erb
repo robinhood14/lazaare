@@ -21,14 +21,14 @@
       <% @cartcontent.each do |sitem| %>
 
       <div class="item">
-          <img src="<%= (Item.find_by id: sitem.item_id).img_url %>" alt="Item">
+          <img src="<%= (Item.find_by id: sitem.item_id).img_url %>" alt="Item" style="width: 140px; height: auto;">
         </a>
         <div class="item-details">
           <h3 class="item-title"><a href="shop-single.html"><%= (Item.find_by id: sitem.item_id).title %></a></h3>
           <h4 class="item-price"><%= (Item.find_by id: sitem.item_id).price %></h4>
           <div class="count-input">
             <a class="incr-btn" data-action="decrease" href="#">–</a>
-            <input class="quantity" type="text" value="<%= sitem.counter %>">
+            <input class="quantity" type="text" value="<%= sitem.quantity %>">
             <a class="incr-btn" data-action="increase" href="#">+</a>
           </div>
         </div>
@@ -38,6 +38,8 @@
       </div>
       
       <% end %>
+    </div>
+  </div>
 
       <div class="col-md-3 col-md-offset-1 col-sm-4 padding-bottom-2x">
         <aside>
@@ -49,9 +51,6 @@
         </aside>
       </div>
 
-</div>
-</div>
+
 </div>
 </section>
-</main>
-</div>
