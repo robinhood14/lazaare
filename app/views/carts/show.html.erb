@@ -25,7 +25,7 @@
         </a>
         <div class="item-details">
           <h3 class="item-title"><a href="<%= item_path(sitem.item_id) %>"><%= (Item.find_by id: sitem.item_id).title %></a></h3>
-          <h4 class="item-price"><%= (Item.find_by id: sitem.item_id).price %></h4>
+          <h4 class="item-price"><%= (Item.find_by id: sitem.item_id).price %>€</h4>
           <div class="count-input">
             <a class="incr-btn" data-action="decrease" href="<%= rm_from_cart_path(sitem.item_id)%>" data-remote="true" data-method="get">–</a>
             <input class="quantity" type="text" value="<%= sitem.quantity %>">
@@ -65,7 +65,7 @@
 
                   <label class="amount">
 
-                    <span>Amount: <%= @total %></span>
+                    <span>Amount: <%= @subtotal %>€</span>
 
                   </label>
 
