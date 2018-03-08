@@ -2,8 +2,7 @@ class SelectedItem < ApplicationRecord
 	belongs_to :cart
 	belongs_to :item
 
-<<<<<<< HEAD
-=======
+
 
 =begin	def add_item(cartid, itemid)
 
@@ -15,5 +14,5 @@ class SelectedItem < ApplicationRecord
 
 	end
 =end
->>>>>>> dac4dcdd5d8d1043a6f946032ff8ef1c18fdfbeb
+
 end
