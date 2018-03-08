@@ -7,20 +7,160 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
- Item.create(title: 'Montre', description: 'Magnifique MA geule', price: 50, img_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2FLQE7OCL.jpg")
- Item.create(title: 'pomme', description: 'fruity fruity', price: 11, img_url: "http://images.all-free-download.com/images/graphicthumb/red_and_green_apple_310425.jpg")
- Item.create(title: 'abricot', description: 'fruity fruity', price: 12, img_url: "https://www.aroma-zone.com/cms/sites/default/files/fiche_technique/fragrances_cosmetiques/Visuel_sorbet-abricot.png")
- Item.create(title: 'pêche', description: 'fruity fruity', price: 13, img_url: "http://img-3.journaldesfemmes.com/IrV3p2mnAxSul6Oj1jjsk1Xofxk=/910x607/smart/23f0e9d66c2745c8b36b1a4c3c79d1a2/ccmcms-jdf/10662450.jpg")
- Item.create(title: 'banane', description: 'fruity fruity', price: 14, img_url: "http://mamul.am/images/photos/150322/banann-azatum-e-stre-n64757-1.jpg")
+ Item.create(title: 'LZ#001', description: 'Montre unisexe à mouvement Quartz - Bracelet en cuir tannage végétal – Boîtier polyamide imprimé en 3DCadran
+Type d’affichage : Digital
+Etanchéité : Résiste à une pression maximale de 3 ATM
+étanche).
+Fonction: Jour, Date, Mois et Année FR/EN, chronomètre, alarme, rétro-éclairage LED.
+Type de pile : 1 pile CR2016Bracelet
+Matières : Cuir tannage végétal
+Type de fermoir: Boucle déployante en Inox
+Hypo allergéniqueBoîtier
+Imprimé 3D par technologie SLS de frittage laser.
+Matière : Plastique Nylon
+Couleurs : Multiples
+Hypoallergénique.
+Type de vitre : Verre
+Made in France
+Garantie: 2 ans', price: 69, img_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2FLQE7OCL.jpg")
+ 
+ Item.create(title: 'LZ#002', description: 'Montre unisexe à mouvement Quartz - Bracelet en cuir tannage végétal – Boîtier polyamide imprimé en 3DCadran
+Type d’affichage : Digital
+Etanchéité : Résiste à une pression maximale de 3 ATM
+étanche).
+Fonction: Jour, Date, Mois et Année FR/EN, chronomètre, alarme, rétro-éclairage LED.
+Type de pile : 1 pile CR2016Bracelet
+Matières : Cuir tannage végétal
+Type de fermoir: Boucle déployante en Inox
+Hypo allergéniqueBoîtier
+Imprimé 3D par technologie SLS de frittage laser.
+Matière : Plastique Nylon
+Couleurs : Multiples
+Hypoallergénique.
+Type de vitre : Verre
+Made in France
+Garantie: 2 ans', price: 69, img_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2FkGjwkDU.jpg")
 
- User.create(email: 'test@test.com', password: 'testtest', password_confirmation: 'testtest')
- User.create(email: 'test1@test.com', password: 'test1test1', password_confirmation: 'test1test1')
+ Item.create(title: 'LZ#003', description: 'Montre unisexe à mouvement Quartz - Bracelet en cuir tannage végétal – Boîtier polyamide imprimé en 3DCadran
+Type d’affichage : Digital
+Etanchéité : Résiste à une pression maximale de 3 ATM
+étanche).
+Fonction: Jour, Date, Mois et Année FR/EN, chronomètre, alarme, rétro-éclairage LED.
+Type de pile : 1 pile CR2016Bracelet
+Matières : Cuir tannage végétal
+Type de fermoir: Boucle déployante en Inox
+Hypo allergéniqueBoîtier
+Imprimé 3D par technologie SLS de frittage laser.
+Matière : Plastique Nylon
+Couleurs : Multiples
+Hypoallergénique.
+Type de vitre : Verre
+Made in France
+Garantie: 2 ans', price: 69, img_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2FpG2vKMh.jpg")
 
- Cart.create(user_id: 1)
- Cart.create(user_id: 2)
+ Item.create(title: 'LZ#004', description: 'Montre unisexe à mouvement Quartz - Bracelet en cuir tannage végétal – Boîtier polyamide imprimé en 3DCadran
+Type d’affichage : Digital
+Etanchéité : Résiste à une pression maximale de 3 ATM
+étanche).
+Fonction: Jour, Date, Mois et Année FR/EN, chronomètre, alarme, rétro-éclairage LED.
+Type de pile : 1 pile CR2016Bracelet
+Matières : Cuir tannage végétal
+Type de fermoir: Boucle déployante en Inox
+Hypo allergéniqueBoîtier
+Imprimé 3D par technologie SLS de frittage laser.
+Matière : Plastique Nylon
+Couleurs : Multiples
+Hypoallergénique.
+Type de vitre : Verre
+Made in France
+Garantie: 2 ans', price: 69, img_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2F3uSCmHF.jpg")
 
- SelectedItem.create(cart_id: 1, item_id: 2, quantity:1)
- SelectedItem.create(cart_id: 1, item_id: 4, quantity:3)
- SelectedItem.create(cart_id: 2, item_id: 4, quantity:2)
+ Item.create(title: 'LZ#005', description: 'Montre unisexe à mouvement Quartz - Bracelet en cuir tannage végétal – Boîtier polyamide imprimé en 3DCadran
+Type d’affichage : Digital
+Etanchéité : Résiste à une pression maximale de 3 ATM
+étanche).
+Fonction: Jour, Date, Mois et Année FR/EN, chronomètre, alarme, rétro-éclairage LED.
+Type de pile : 1 pile CR2016Bracelet
+Matières : Cuir tannage végétal
+Type de fermoir: Boucle déployante en Inox
+Hypo allergéniqueBoîtier
+Imprimé 3D par technologie SLS de frittage laser.
+Matière : Plastique Nylon
+Couleurs : Multiples
+Hypoallergénique.
+Type de vitre : Verre
+Made in France
+Garantie: 2 ans', price: 69, img_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2FQbldFd4.jpg")
+
+ Item.create(title: 'LZ#006', description: 'Montre unisexe à mouvement Quartz - Bracelet en cuir tannage végétal – Boîtier polyamide imprimé en 3DCadran
+Type d’affichage : Digital
+Etanchéité : Résiste à une pression maximale de 3 ATM
+étanche).
+Fonction: Jour, Date, Mois et Année FR/EN, chronomètre, alarme, rétro-éclairage LED.
+Type de pile : 1 pile CR2016Bracelet
+Matières : Cuir tannage végétal
+Type de fermoir: Boucle déployante en Inox
+Hypo allergéniqueBoîtier
+Imprimé 3D par technologie SLS de frittage laser.
+Matière : Plastique Nylon
+Couleurs : Multiples
+Hypoallergénique.
+Type de vitre : Verre
+Made in France
+Garantie: 2 ans', price: 69, img_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2FSTBQFZ5.jpg")
+
+ Item.create(title: 'LZ#007', description: 'Montre unisexe à mouvement Quartz - Bracelet en cuir tannage végétal – Boîtier polyamide imprimé en 3DCadran
+Type d’affichage : Digital
+Etanchéité : Résiste à une pression maximale de 3 ATM
+étanche).
+Fonction: Jour, Date, Mois et Année FR/EN, chronomètre, alarme, rétro-éclairage LED.
+Type de pile : 1 pile CR2016Bracelet
+Matières : Cuir tannage végétal
+Type de fermoir: Boucle déployante en Inox
+Hypo allergéniqueBoîtier
+Imprimé 3D par technologie SLS de frittage laser.
+Matière : Plastique Nylon
+Couleurs : Multiples
+Hypoallergénique.
+Type de vitre : Verre
+Made in France
+Garantie: 2 ans', price: 69, img_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2Fgk6ADCS.jpg")
+
+ Item.create(title: 'LZ#008', description: 'Montre unisexe à mouvement Quartz - Bracelet en cuir tannage végétal – Boîtier polyamide imprimé en 3DCadran
+Type d’affichage : Digital
+Etanchéité : Résiste à une pression maximale de 3 ATM
+étanche).
+Fonction: Jour, Date, Mois et Année FR/EN, chronomètre, alarme, rétro-éclairage LED.
+Type de pile : 1 pile CR2016Bracelet
+Matières : Cuir tannage végétal
+Type de fermoir: Boucle déployante en Inox
+Hypo allergéniqueBoîtier
+Imprimé 3D par technologie SLS de frittage laser.
+Matière : Plastique Nylon
+Couleurs : Multiples
+Hypoallergénique.
+Type de vitre : Verre
+Made in France
+Garantie: 2 ans', price: 69, img_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2FLQE7OCL.jpg")
+
+ Item.create(title: 'LZ#009', description: 'Montre unisexe à mouvement Quartz - Bracelet en cuir tannage végétal – Boîtier polyamide imprimé en 3DCadran
+Type d’affichage : Digital
+Etanchéité : Résiste à une pression maximale de 3 ATM
+étanche).
+Fonction: Jour, Date, Mois et Année FR/EN, chronomètre, alarme, rétro-éclairage LED.
+Type de pile : 1 pile CR2016Bracelet
+Matières : Cuir tannage végétal
+Type de fermoir: Boucle déployante en Inox
+Hypo allergéniqueBoîtier
+Imprimé 3D par technologie SLS de frittage laser.
+Matière : Plastique Nylon
+Couleurs : Multiples
+Hypoallergénique.
+Type de vitre : Verre
+Made in France
+Garantie: 2 ans', price: 69, img_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2F6J3GUa8.jpg")
+
+
+
 
  
