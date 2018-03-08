@@ -9,8 +9,8 @@ class CartsController < ApplicationController
     @itemcount = 0
     @cartcontent.each do |item|
       @object = Item.find_by id: item.item_id
-      @subtotal += (@object.price * item.counter)
-      @itemcount += item.counter
+      @subtotal += (@object.price * item.quantity)
+      @itemcount += item.quantity
     end
   end
  		

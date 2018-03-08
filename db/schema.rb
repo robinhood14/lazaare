@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20180308112307) do
   create_table "selected_items", force: :cascade do |t|
     t.integer "cart_id"
     t.integer "item_id"
-    t.integer "counter"
+    t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["cart_id", "item_id"], name: "index_selected_items_on_cart_id_and_item_id"
