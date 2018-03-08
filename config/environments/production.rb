@@ -91,7 +91,8 @@ Rails.application.configure do
 
 
   # config/environments/production.rb
-
+  # 
+=begin
 config.paperclip_defaults = {
 
   storage: :s3,
@@ -109,4 +110,5 @@ config.paperclip_defaults = {
   }
 
 }
+=end
 end
