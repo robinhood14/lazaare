@@ -5,12 +5,15 @@ class CartsController < ApplicationController
   def show 
     $cart = Cart.find_by user_id:(current_user.id)
     @cartcontent = SelectedItem.where(cart_id: $cart.id)
-    #@total = 0
-    #@cart.items.each do |item|
-    #  @total += item.price
-    #end
+    @subtotal = 0
+    @cartcontent.each do |item|
+      @object = Item.find_by id: item.item_id
+      @subtotal += @object.price 
+    end
   end
  		
+
+
   def update
 
     if user_signed_in?
