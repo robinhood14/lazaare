@@ -3,6 +3,9 @@ class CartsController < ApplicationController
 	 before_action :authenticate_user!
 
   def show 
+    unless signed_in?
+      redirect_to new_user_session_path
+    end
     $cart = Cart.find_by user_id:(current_user.id)
     @cartcontent = SelectedItem.where(cart_id: $cart.id)
     @subtotal = 0
