@@ -10,27 +10,15 @@
       <section class="fw-section bg-gray padding-top-3x">
 
         <!-- Page Navigation -->
-        <a href="#" class="page-nav page-prev">
-          <span class="page-preview">
-            <img src="img/pager/01.jpg" alt="Page">
-          </span>
-          &mdash; Prev
-        </a>
-        <a href="#" class="page-nav page-next">
-          <span class="page-preview">
-            <img src="img/pager/02.jpg" alt="Page">
-          </span>
-          Next &mdash;
-        </a>
+        
         <div class="container padding-top">
 
           <!-- Product Gallery -->
           <div class="product-gallery">
             <!-- Preview -->
             <ul class="product-gallery-preview">
-              <li id="preview01"><img src="<%= @items.img_url %>" alt="Product"></li>
               <li id="preview02" class="current"><img src="<%= @items.img_url %>" alt="Product"></li>
-              <li id="preview03"><img src="<%= @items.img_url %>" alt="Product"></li>
+              
             </ul><!-- .product-gallery-preview -->
             <!-- Thumblist -->
            <!-- .product-gallery-thumblist -->
@@ -43,20 +31,16 @@
         <div class="container">
           <div class="product-info padding-top-2x text-center">
             <h1 class="h2 space-bottom-half"><%= @items.title%></h1>
-            <h2><%= @items.price %></h2>
+            <h2><%= @items.price %>€</h2>
             
             <div class="product-meta">
               
               </span>
             </div><!-- .product-meta -->
             <div class="product-tools shop-item">
-              <div class="count-input">
-                <a class="incr-btn" data-action="decrease" href="#">–</a>
-                <input class="quantity" type="text" value="1">
-                <a class="incr-btn" data-action="increase" href="#">+</a>
-              </div><!-- .count-input -->
+             <!-- .count-input -->
               <!-- .form-element -->
-              <a href="#" class="add-to-cart">
+              <a href="<%= add_to_cart_path(@items)%>" data-remote="true" data-method="get" class="add-to-cart">
                 <em>Add to Cart</em>
                 <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
     							<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"></path>
