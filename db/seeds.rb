@@ -19,8 +19,8 @@
  Cart.create(user_id: 1, item_id: 5)
  Cart.create(user_id: 2, item_id: 2)
 
- SelectedItem.create(cart_id: 1, item_id: 2, count:1)
- SelectedItem.create(cart_id: 1, item_id: 4, count:3)
- SelectedItem.create(cart_id: 2, item_id: 4, count:2)
+ SelectedItem.create(cart_id: 1, item_id: 2, counter:1)
+ SelectedItem.create(cart_id: 1, item_id: 4, counter:3)
+ SelectedItem.create(cart_id: 2, item_id: 4, counter:2)
 
  
